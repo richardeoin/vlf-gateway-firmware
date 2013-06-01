@@ -10,9 +10,12 @@ src/net_init_service.c \
 src/http_rx.c \
 src/debug.c \
 src/frame_processor.c \
+src/radio/radio_irq.c \
+src/radio/ieee_frame.c \
 src/radio/rf212_functions.c \
+src/radio/radio.c \
 src/radio/rf212.c \
-src/cr_startup_lpc176x.c \
+src/radio/radio_functions.c \
 src/main.c \
 src/radio_init_service.c \
 src/upload.c \
@@ -31,10 +34,6 @@ src/lwip/core/timers.c \
 src/lwip/core/sys.c \
 src/lwip/core/memp.c \
 src/lwip/core/stats.c \
-src/lwip/core/ipv6/ip6_addr.c \
-src/lwip/core/ipv6/icmp6.c \
-src/lwip/core/ipv6/ip6.c \
-src/lwip/core/ipv6/inet6.c \
 src/lwip/core/mem.c \
 src/lwip/core/snmp/asn1_enc.c \
 src/lwip/core/snmp/msg_in.c \
