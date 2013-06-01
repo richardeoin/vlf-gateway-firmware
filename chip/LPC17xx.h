@@ -169,7 +169,7 @@ typedef struct
 
   __IO	uint32_t CANSLEEPCLR;		// Allows clearing the current CAN channel sleep state
   __IO	uint32_t CANWAKEFLAGS;		// Allows reading the wake-up state of the CAN channels
-	uint32_t RESERVED4[12];
+	uint32_t RESERVED4[10];
 
   __IO	uint32_t EXTINT;		// External Interrupt Flag Register
 	uint32_t RESERVED5[1];
@@ -560,7 +560,7 @@ typedef struct
   __I	uint32_t SR;		// Status Register
   __IO	uint32_t CPSR;		// Clock Prescale Register
   __IO	uint32_t IMSC;		// Interrupt Mask Set and Clear
-	uint32_t RESERVED1[1];
+  __IO	uint32_t RIS;		// Raw Interrupt Status Register
   __IO	uint32_t MIS;		// Masked Interrupt Status Register
   __IO	uint32_t ICR;		// SSPICR Interrupt Clear Register
   __IO	uint32_t DMACR;		// DMA Control Register 
