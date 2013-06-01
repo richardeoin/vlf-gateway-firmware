@@ -73,7 +73,6 @@ src/lwip/netif/etharp.c \
 src/lwip/netif/lpc_phy_dp83848.c \
 src/lwip/netif/slipif.c \
 src/lwip/netif/lpc_phy_lan8720.c \
-src/lwip/netif/lpc_emac_zcbuffs.c \
 src/lwip/netif/lpc_mac_addr.c \
 src/lwip/netif/mac_addr_i2c.c \
 src/lwip/netif/lpc_emac.c \
