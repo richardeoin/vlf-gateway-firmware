@@ -38,7 +38,12 @@ void RIT_IRQHandler(void) {
 }
 
 int main(void) {
+  SystemInit();
+
   debug_puts("Happy Face!\n");
+
+  SystemCoreClockUpdate();
+  uint32_t clock = SystemCoreClock;
 
   /* Setup the memory */
   memory_init();
@@ -66,7 +71,7 @@ int main(void) {
 
   /* Sleep forever */
   while(1) {
-//    __WFI();
+    __WFI();
   }
 
   return 0;

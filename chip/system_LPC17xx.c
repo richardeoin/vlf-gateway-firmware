@@ -136,23 +136,22 @@ void SystemInit (void)
   while ((LPC_SC->SCS & 0x0040) == 0);
 #endif
 
-  /* Divide pllclk by 4 to get the CPU clock */
-  LPC_SC->CCLKCFG = 0x03;
+  /* Divide pllclk by 3 to get the CPU clock */
+  LPC_SC->CCLKCFG = 0x02;
 
 #ifdef USE_EXTERNAL_XTAL
   /* Set the Clock Source for PLL0 to the Main Oscillator */
   LPC_SC->CLKSRCSEL = 0x01;
 #endif
 
-  /* Set up PLL0 to multiply by 33.333.. */
-  EnablePLL0(100, 6);
+  /* Set up PLL0 to multiply by 75.. */
+  EnablePLL0(75, 2);
 
   /* And switch to PLL0 */
   SwitchToPLL0();
 
   /*
-   * The core is now running at 8.333.. times the XTAL frequency.
-   * If the crystal is 12MHz then this frequency is 100MHz.
-   * If the IRC is still being used this is 33.333...MHz.
+   * The core is now running at 25 times the XTAL frequency.
+   * If the IRC is still being used this is 100MHz.
    */
 }

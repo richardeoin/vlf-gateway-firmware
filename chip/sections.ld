@@ -130,9 +130,9 @@ SECTIONS
 
 	} > RAM
 
-	.dataahb :
+	.dataahb (NOLOAD):
 	{
-		*(.lwip_ram_heap)
+		*(.lwip_ram*)
 	} > RAMAHB	
 
 	.bss :
