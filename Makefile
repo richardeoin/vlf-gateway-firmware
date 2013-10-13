@@ -73,7 +73,7 @@ SIZE	:= $(TARGET)-size
 #
 # Binaries supplied with LPCXpresso used for downloading.
 #
-LPCINSTALL	:= /usr/local/lpcxpresso_4.2.3_255/lpcxpresso/bin/
+LPCINSTALL	:= /usr/local/lpcxpresso_4.3.0_1025/lpcxpresso/bin/
 CHECKSUM	:= $(LPCINSTALL)checksum
 LPCLINK		:= $(LPCINSTALL)$(DEBUG)
 DFUUTIL		:= $(LPCINSTALL)dfu-util

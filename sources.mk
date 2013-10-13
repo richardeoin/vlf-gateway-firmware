@@ -24,7 +24,6 @@ src/console.c \
 src/base64.c \
 src/http_tx.c \
 src/lwip/arch/lpc_arch_systick.c \
-src/lwip/arch/lpc_debug.c \
 src/lwip/arch/sys_arch.c \
 src/lwip/core/tcp_out.c \
 src/lwip/core/init.c \
