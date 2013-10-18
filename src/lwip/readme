@@ -1,0 +1,7 @@
+lwip for the lpc17xx
+
+Debug configuration options are available in inc/lwip/lwipopts.h
+Either DP83848 or LAN8720 PHY is supported, select this in inc/lwip/lpc_emac_config.h
+The number of Rx and Tx Descriptors in use can be configured in inc/lwip/lpc_emac_config.h 
+
+Pointer RX Status (PRXS) needs to be aligned to a 8-bytes boundary for correct operation, see inc/lwip/lpc_emac.h

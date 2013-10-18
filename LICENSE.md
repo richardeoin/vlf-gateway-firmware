@@ -14,4 +14,8 @@ MIT Licensed
 
 ## lwip lpc ##
 
-##
+## radio ##
+
+`inc/radio/radio_functions.h`
+[new-style BSD license](http://opensource.org/licenses/BSD-3-Clause).
+[Freaklabs](http://www.freaklabs.org/)
